@@ -32,7 +32,7 @@ router.post('/', function (req, res) {
   })
 });
 
-router.post('http://localhost:3030/', function (req, res) {
+router.post('http://localhost:4000/', function (req, res) {
   var water = new Water(req.body)
   water.save(function (err) {
     if (err) {
